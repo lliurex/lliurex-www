@@ -1,0 +1,31 @@
+JSON format for resources:
+
+{
+    "linkid":"jclic-aula",                              // Identifier (not shown)
+    "link":"http://jclic-aula",                         // link to resource
+    "icon":"",                                          // path to image to show
+    "fonticon":"icon-puzzle-piece",                     // identifier of fonticon for resource
+    "name": {
+        "default":"JCLic Resources",                    // Resource name, for all supported locales
+        "ca_ES":"Recursos JClic",
+        "es_ES":"Recursos JClic"
+    },
+    "description": {
+        "default":"Shared resources for jclic",         // Resource description, for all supported locales
+        "ca_ES":"Recursos compartits per a jclic",
+        "es_ES":"Recursos compartidos para jclic"
+    }
+}
+
+Notes for Font icon:
+
+Fonticon (font Awesome) is a font used to be shown as icons. Almost all resources should use it.
+Some resources could be:
+
+http://share -> "icon-share"
+http://lliurex-cloud -> "icon-cloud";
+http://pmb ->"icon-book";
+http://moodle->"icon-pencil"
+http://jclic-aula="icon-puzzle-piece";
+
+There is a complete reference to icons in: http://fortawesome.github.io/Font-Awesome/icons/

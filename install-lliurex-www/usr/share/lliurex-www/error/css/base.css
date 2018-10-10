@@ -1,0 +1,33 @@
+h1{
+fontSize: 15;
+color: #000099;
+font-style: italic;
+fontWeight: bold;
+position:relative; 
+}
+.text{
+fontSize: +25;
+color: #000099;
+text-align: left;
+font-style: italic;
+fontWeight: bold;
+}
+.titol{
+fontSize: 15;
+color: #FF6600;
+font-style: italic;
+fontWeight: bold;
+}
+.url{
+fontSize: 10;
+color: red;
+font-style: italic;
+fontWeight: bold;
+}
+.categoria{
+fontSize: 10;
+color: green;
+font-style: italic;
+fontWeight: bold;
+}
+

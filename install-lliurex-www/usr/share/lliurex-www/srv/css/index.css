@@ -1,0 +1,280 @@
+ 
+ 
+ html, body{
+    margin: 0px !important;
+    padding: 0px !important;
+    height: 100%;
+    width: 100%;
+    position: relative;
+ }
+ 
+ 
+ body{
+   color: #888888;
+   margin: 0px !important;
+   padding: 0px !important;
+ }
+ 
+ #search{
+   /*background: #ff0000;*/
+   
+  margin-top: 56px;
+  margin-bottom: 24px;
+  float: left;
+  display: block;
+  clear: both;
+  text-align: center;
+  
+ }
+ 
+ #mainContainer{
+   background: #ffffff;
+ }
+ 
+ #headerbg{
+   background: 
+  repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 5px,
+    #f0a008 5px,
+    #ff9100 10px
+  ),
+  /* on "bottom" */
+  linear-gradient(
+    to bottom,
+    #f0a008,
+    #ff9100
+    
+  );
+   
+ }
+ 
+ #header{
+    /*background: #cccccc;*/
+    height: 150px;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(../imagen/llx16/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+ }
+ 
+.google{
+   width: 150px !important;
+   height: 50px !important;
+   
+   margin: 10px;
+   padding: 0px;
+   vertical-align: middle;
+   display: inline-block;
+   background-image: url(../imagen/llx16/google.png);
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+ 
+#links{
+   background: rgba(255,255,255,0.8);
+   /*display: block;
+   float: left;
+   clear: both;*/
+}
+ 
+li{
+    list-style: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ 
+ 
+
+ 
+ /* FLIPPING EFFECT  */
+ 
+ /* entire container, keeps perspective */
+ .flip-container {
+    perspective: 1000px;
+   
+    
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+            
+.flip-container, .front, .back {
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid #cccccc;*/
+    /*height: 100%;*/
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+        width: 100%;
+    height: 100%;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 100%;
+    height: 100%;*/
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.front:hover, .back:hover{
+   cursor: pointer;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */ 
+    transform: rotateY(0deg);
+    /*ackground:#ffffee;*/
+
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    background: #ffffff !important;
+    /*background:#ffeeff;*/
+}
+
+
+.linktitle, .linkdesc{
+   width: 100%;
+   float: left;
+   clear: both;
+   text-align: center;
+}
+
+.linktitle{
+   margin-top: 10%;
+
+   font-variant: small-caps;
+   font-size: 1.2em;
+}
+
+.hr{
+   
+   float: left;
+   width: 100%;
+   border: 0px;
+   height: 1px;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+   margin-bottom: 10px;
+   
+}
+
+/*hr {
+   border: 0;
+   height: 1px;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+   }
+*/
+.linkdesc{
+   font-size: 0.9em;
+}
+
+
+/* ISOTOPE */
+
+.grid-item {
+  float: left;
+  /*width: 110px;*/
+  height: 110px;
+  margin-bottom: 10px;
+  /*background: #e6e5e4;
+  border: 2px solid #b6b5b4;*/
+}
+
+
+.grid-item--width1 { width: 110px; margin-right: 5px;}
+.grid-item--width2 { width: 220px; margin-right: 10px;}
+.grid-item--height2 { height: 220px; }
+
+
+
+/* Link Bar*/
+.linkTypeSelector{
+   margin-left: auto;
+   margin-right: auto;
+   width: 200px;
+   background: #eeeeee;
+}
+
+.linkTypeIcon{
+    float: left;
+    margin-left: auto;
+    margin-right:auto;
+    width: 24px;
+    height:24px;
+    margin: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.linkTypeIcon:hover{
+   cursor: pointer;
+}
+
+
+
+
+#newscontainer{
+   /*border: 1px solid #cccccc;*/
+   min-height: 200px;
+   max-height: 300px;
+   font-size: 1.1em;
+   font-weight: bold;
+}
+
+.newscontainerspan{
+   width: 32px;
+   height: 32px;
+   margin: -3px 5px 0px -32px;
+   display: block;
+   float: left;
+   background: url(img/rss.png) no-repeat;
+}
+
+#lliurex_news{
+   margin-top: 20px;
+   margin-left: -32px;
+   font-size: 0.9em;
+   overflow-y: scroll;
+   max-height: 290px;
+}
+
+#footer{
+position: fixed;
+bottom: 32px !important;
+height: 32px !important;
+line-height: 32px !important;
+border-top: 1px solid #aaaaaa;
+background-color: #f5f5f5;
+width: 100%;
+margin: 0px 0px -31px 0px;
+padding: 0px 0px 0px 20px;
+}
+
+
+
+
+
+
+

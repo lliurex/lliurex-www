@@ -1,6 +1,5 @@
 Format: http://dep.debian.net/deps/dep5
 Upstream-Name: lliurex-www
-Source: http://svn.lliurex.net/trusty/lliurex-www
 
 Files: *
 Copyright: 2013 Hector Garcia Huerta <lliurex_devel1@edu.gva.es>

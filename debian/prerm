@@ -1,0 +1,29 @@
+#!/bin/sh
+
+set -e
+
+case $1 in
+        remove|purge|abort-install|disappear)
+
+		if [ -L /var/www/srv ] ; then
+	
+			rm /var/www/srv || true
+
+		fi
+
+		if [ -L /var/www/error ] ; then
+
+			rm /var/www/error
+		fi
+		;;
+
+	*)
+                echo "Nothing to do"
+                ;; 
+esac
+
+# Other Stuff #
+
+#DEBHELPER#
+	
+exit 0 	

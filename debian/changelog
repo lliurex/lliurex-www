@@ -1,0 +1,153 @@
+lliurex-www (0.27) xenial; urgency=high
+
+  * Fixed server access through external ip
+  * Added LliureX News RSS feed
+
+ -- Jose A. Murcia <joamuran@gmail.com>  Wed, 13 Sep 2017 13:32:18 +0200
+
+lliurex-www (0.26) xenial; urgency=high
+
+  * Fixed bug in index.js when there is not Internet connection
+
+ -- Jose A. Murcia <joamuran@gmail.com>  Tue, 21 Mar 2017 14:13:44 +0100
+
+lliurex-www (0.25) xenial; urgency=high
+
+  * Modernized UI
+  * Getting links from lliurex.net
+
+ -- Jose A. Murcia <joamuran@gmail.com>  Mon, 06 Mar 2017 13:25:14 +0100
+
+lliurex-www (0.24) xenial; urgency=medium
+
+  * First release to xenial
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 10 Feb 2016 12:37:33 +0100
+
+lliurex-www (0.21) trusty; urgency=high
+
+  * replace service by invoke-rc.d 
+  * replace restart by reload
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Mon, 27 Oct 2014 14:11:41 +0100
+
+lliurex-www (0.20) trusty; urgency=high
+
+  * 
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Mon, 27 Oct 2014 13:31:19 +0100
+
+lliurex-www (0.19) trusty; urgency=high
+
+  * Fixed redirect
+  * Added prerm
+
+ -- Alfons Lloret Sananton <turix13@gmail.com>  Wed, 08 Oct 2014 10:17:55 +0200
+
+lliurex-www (0.18) trusty; urgency=low
+
+  * new releases
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 26 Jun 2014 10:10:37 +0200
+
+lliurex-www (0.17) precise; urgency=high
+
+  * Removed cname
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 26 Jun 2014 10:09:16 +0200
+
+lliurex-www (0.16) precise; urgency=high
+
+  * Added dpkg compare in preinst
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 26 Jun 2014 10:04:14 +0200
+
+lliurex-www (0.15) precise; urgency=high
+
+  * Fixed preinst
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 26 Jun 2014 09:41:24 +0200
+
+lliurex-www (0.14) precise; urgency=high
+
+  * Added suitcase for lliurex-mirror
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Thu, 12 Jun 2014 13:09:02 +0200
+
+lliurex-www (0.13) precise; urgency=high
+
+  * Added headphones icon for lliurex-lab
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 11 Jun 2014 13:32:48 +0200
+
+lliurex-www (0.12) precise; urgency=high
+
+  * Added preinstall script 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Wed, 06 Nov 2013 09:15:01 +0100
+
+lliurex-www (0.11) precise; urgency=low
+
+  * activate error cname if not exists
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Wed, 30 Oct 2013 13:33:14 +0100
+
+lliurex-www (0.10) precise; urgency=low
+
+  * activate error site
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Tue, 29 Oct 2013 16:04:17 +0100
+
+lliurex-www (0.9) precise; urgency=low
+
+  * added error cname 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Tue, 29 Oct 2013 10:02:25 +0100
+
+lliurex-www (0.8) precise; urgency=low
+
+  * Modified error page
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Mon, 28 Oct 2013 13:04:45 +0100
+
+lliurex-www (0.7) precise; urgency=low
+
+  * fixed problem with firefox-plugins
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Fri, 27 Sep 2013 14:09:34 +0200
+
+lliurex-www (0.6) precise; urgency=low
+
+  * Added some icons to lliurex.css 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Tue, 16 Jul 2013 12:11:39 +0200
+
+lliurex-www (0.5) precise; urgency=low
+
+  * Removed jclic json
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Fri, 21 Jun 2013 09:21:12 +0200
+
+lliurex-www (0.4) precise; urgency=low
+
+  * Fixed dependencies, conflicts etc,
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Thu, 20 Jun 2013 09:44:50 +0200
+
+lliurex-www (0.3) precise; urgency=low
+
+  * Changed conflict to (<= 0.24)
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Thu, 20 Jun 2013 09:23:39 +0200
+
+lliurex-www (0.2) precise; urgency=low
+
+  * Added conflict with n4d-apache (< 0.25) 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Thu, 20 Jun 2013 09:07:52 +0200
+
+lliurex-www (0.1) precise; urgency=low
+
+  * First release
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Wed, 19 Jun 2013 23:16:16 +0200

@@ -1,0 +1,17 @@
+{
+    "link":"http://share",
+    "icon":"sharedFolders.svg",
+    "name": {
+        "default":"Shared Resources",
+        "valencia":"Recursos Compartits",
+        "es":"Recursos Compartidos"
+    },
+    "description": {
+        "default":"Shared Resources for Classroom",
+        "valencia":"Recursos compartits a l'aula",
+        "es":"Recursos compartidos en el aula"
+    }, 
+    "order": 80,
+    "editable": false,  
+    "visibility": true
+}

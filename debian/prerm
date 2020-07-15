@@ -20,6 +20,9 @@ case $1 in
 
 			rm /var/www/error
 		fi
+
+		find /var/lib/lliurex-www/links -type f -exec rm {} \;
+		find /var/lib/lliurex-www/ -type f -exec rm {} \;
 	;;
 
 	failed-upgrade|upgrade|deconfigure)

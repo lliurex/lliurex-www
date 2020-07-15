@@ -1,0 +1,17 @@
+{
+    "link":"http://sai.edu.gva.es/",
+    "icon":"sai_.svg",
+    "name": {
+        "default":"SAI",
+        "valencia":"SAI",
+        "es":"SAI"
+    },
+    "description": {
+        "default":"Enllaç a Support i Assistència Informàtica",
+        "valencia":"Enllaç a Support i Assistència Informàtica",
+        "es":"Web de Soporte y asistencia Informatica"
+    },
+    "order": 80,
+    "editable": false,
+    "visibility": true
+}

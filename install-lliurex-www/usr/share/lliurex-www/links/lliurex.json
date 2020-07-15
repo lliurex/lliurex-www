@@ -1,0 +1,17 @@
+{
+    "link":"http://lliurex.net",
+    "icon":"lliurex_.svg",
+    "name": {
+        "default":"LliureX",
+        "valencia":"LliureX",
+        "es":"LliureX"
+    },
+    "description": {
+        "default":"Link to LliureX",
+        "valencia":"Web de LliureX",
+        "es":"Web de Lliurex"
+    },
+    "order": 80,
+    "editable": false,
+    "visibility": true
+}

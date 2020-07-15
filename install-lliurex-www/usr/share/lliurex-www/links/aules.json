@@ -1,0 +1,17 @@
+{
+    "link":"http://aules.edu.gva.es",
+    "icon":"aules_icon_link.svg",
+    "name": {
+        "default":"Aules",
+        "valencia":"Aules",
+        "es":"Aules"
+    },
+    "description": {
+        "default":"Link to Aules",
+        "valencia":"Web de Aules",
+        "es":"Web de Aules"
+    },
+    "order": 80,
+    "editable": false,
+    "visibility": true
+}

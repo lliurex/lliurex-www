@@ -2,8 +2,13 @@
 
 set -e
 
+
+
+
 case $1 in
-        remove|purge|abort-install|disappear)
+	remove)
+
+		rm -r /var/lib/lliurex-www/ || true
 
 		if [ -L /var/www/srv ] ; then
 	
@@ -15,11 +20,10 @@ case $1 in
 
 			rm /var/www/error
 		fi
-		;;
+	;;
 
-	*)
-                echo "Nothing to do"
-                ;; 
+	failed-upgrade|upgrade|deconfigure)
+	;;
 esac
 
 # Other Stuff #

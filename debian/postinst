@@ -13,22 +13,33 @@ case $1 in
 
 		if [ ! -L /var/www/srv ] ; then
 
-			ln -s /usr/share/lliurex-www/srv /var/www/srv || true
-
-		fi
-		
-		if [ ! -L /var/www/error ] ; then
-
-			ln -s /usr/share/lliurex-www/error /var/www/error || true
+			ln -s /usr/share/ainur /var/www/srv || true
 
 		fi
 
-		if [ -e /usr/share/apache2/apache2-maintscript-helper ] ; then
 
-                        . /usr/share/apache2/apache2-maintscript-helper
-                        apache2_invoke ensite error.conf
-                fi
+
+		BASEPATH="/usr/share/lliurex-www/srv/links/"
+		LINKSPATH="/var/lib/lliurex-www/links/"
+		DESTPATH="/var/lib/lliurex-www/"
 		
+		if [ ! -e "$LINKSPATH" ]; then
+		        mkdir -p $LINKSPATH
+		fi      
+		
+		for x in $( ls /home/kbut/desarrollo/lliurex/lliurex-www/install-lliurex-www/usr/share/lliurex-www/links/*.json); do
+		        FILENAME=$(basename $x)
+		        if [ ! -e "$LINKSPATH$FILENAME" ]; then
+		                cp "$BASEPATH$FILENAME" $LINKSPATH
+		        fi      
+		done
+		
+		chown www-data:www-data -R $DESTPATH
+		chown www-data:www-data -R $LINKSPATH
+		chown www-data:www-data -R /etc/lliurex-www
+
+		/usr/bin/lliurex-www-fix-links
+
 		invoke-rc.d apache2 reload || true
 		;;
 	*)

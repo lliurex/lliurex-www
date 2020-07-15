@@ -11,6 +11,15 @@ case $1 in
 			rm -rf /var/www/html
 		fi		
 
+
+		if [ -L /var/www/srv  ]; then
+			REALPATH="$(readlink -f /var/www/srv)"
+			if [ "$REALPATH" != "/usr/share/ainur" ]; then
+				rm /var/www/srv
+			fi
+		fi
+
+
 		if [ ! -L /var/www/srv ] ; then
 
 			ln -s /usr/share/ainur /var/www/srv || true

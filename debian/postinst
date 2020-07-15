@@ -19,7 +19,7 @@ case $1 in
 
 
 
-		BASEPATH="/usr/share/lliurex-www/srv/links/"
+		BASEPATH="/usr/share/lliurex-www/links/"
 		LINKSPATH="/var/lib/lliurex-www/links/"
 		DESTPATH="/var/lib/lliurex-www/"
 		

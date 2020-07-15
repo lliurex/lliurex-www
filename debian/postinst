@@ -27,7 +27,7 @@ case $1 in
 		        mkdir -p $LINKSPATH
 		fi      
 		
-		for x in $( ls /home/kbut/desarrollo/lliurex/lliurex-www/install-lliurex-www/usr/share/lliurex-www/links/*.json); do
+		for x in $( ls /usr/share/lliurex-www/links/*.json); do
 		        FILENAME=$(basename $x)
 		        if [ ! -e "$LINKSPATH$FILENAME" ]; then
 		                cp "$BASEPATH$FILENAME" $LINKSPATH

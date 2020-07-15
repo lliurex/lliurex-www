@@ -1,0 +1,9 @@
+{
+    "link" : "",
+    "icon" : "",
+    "name" : {"default":"","es":"","valencia":""},
+    "description" : {"default":"","es":"","valencia":""},
+    "order" : 999,
+    "editable" : true,
+    "visibility" : true
+}

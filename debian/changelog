@@ -1,3 +1,9 @@
+lliurex-www (0.40) bionic; urgency=medium
+
+  * Refactorize all package. Now has only files for lliurex-server-page
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Wed, 15 Jul 2020 16:27:52 +0200
+
 lliurex-www (0.38) bionic; urgency=high
 
   * Non-maintainer upload.

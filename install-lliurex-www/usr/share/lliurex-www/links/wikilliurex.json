@@ -1,0 +1,17 @@
+{
+    "link":"https://wiki.edu.gva.es/lliurex",
+    "icon":"lliurex_wiki.svg",
+    "name": {
+        "default":"Wiki LliureX",
+        "valencia":"Wiki LliureX",
+        "es":"Wiki LliureX"
+    },
+    "description": {
+        "default":"Wiki of LliureX",
+        "valencia":"Wiki de LliureX",
+        "es":"Wiki de Lliurex"
+    },
+    "order": 80,
+    "editable": false,
+    "visibility": true
+}

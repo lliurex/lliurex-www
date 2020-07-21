@@ -1,0 +1,17 @@
+{
+    "link":"http://mestreacasa.gva.es/web/lliurex/forums",
+    "icon":"lliurex_foro.svg",
+    "name": {
+        "default":"Foro LliureX",
+        "valencia":"Foro LliureX",
+        "es":"Foro LliureX"
+    },
+    "description": {
+        "default":"Link to forum LliureX",
+        "valencia":"Foro de LliureX",
+        "es":"Foro de Lliurex"
+    },
+    "order": 80,
+    "editable": false,
+    "visibility": true
+}

@@ -6,17 +6,22 @@ import codecs
 import json
 import pwd
 import grp
-
+from pathlib import Path
+from shutil import move
 
 class App:
     def __init__(self):
         self.basepath = '/usr/share/lliurex-www/srv/links'
         self.destpath = '/var/lib/lliurex-www/links'
+        self.easysitesorig = '/usr/share/lliurex-www/srv/'
+        self.easysitesdest = '/var/www/easy-sites'
         self.wwwuser = pwd.getpwnam("www-data").pw_uid
         self.wwwgroup = grp.getgrnam("www-data").gr_gid
 
 
     def run(self):
+        easyfolder = Path(self.easysitesdest)
+        easyfolder.mkdir(parents=True,exist_ok=True)
         listfiles = glob.glob(os.path.join(self.basepath,'easy-*.json'))
         for x in listfiles:
             try:
@@ -26,11 +31,13 @@ class App:
                     config['visibility'] = True
                     config['editable'] = False
                     config['order'] = 200
+                    config['link'] = 'http://server/easy-sites/'+os.path.basename(config['link'])
                 dest_file = os.path.join( self.destpath, os.path.basename(x) )
                 with codecs.open( dest_file , 'w', encoding='utf-8' ) as fd:
                     json.dump(config, fd, indent=4)
                 os.chown(dest_file, self.wwwuser, self.wwwgroup)
                 os.remove(x)
+                move( os.path.join(self.easysitesorig, os.path.basename( config['link'] ) ), os.path.join(self.easysitesdest, os.path.basename( config['link'] ) ))
             except Exception as e:
                 print("Error on process " + x )
                 print("Exception ", str(e))
@@ -44,11 +51,13 @@ class App:
                     config['visibility'] = False
                     config['editable'] = False
                     config['order'] = 200
+                    config['link'] = 'http://server/easy-sites/'+os.path.basename(config['link'])
                 dest_file = os.path.join( self.destpath, os.path.basename(x) )
                 with codecs.open( dest_file, 'w', encoding='utf-8' ) as fd:
                     json.dump( config, fd, indent=4)
                 os.chown(dest_file, self.wwwuser, self.wwwgroup)
                 os.remove(x)
+                move( os.path.join(self.easysitesorig, os.path.basename( config['link'] ) ), os.path.join(self.easysitesdest, os.path.basename( config['link'] ) ))
             except Exception as e:
                 print("Error on process " + x )
                 print("Exception ", str(e))

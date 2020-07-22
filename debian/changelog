@@ -1,3 +1,9 @@
+lliurex-www (0.40.7) bionic; urgency=medium
+
+  * Add lliurexmeet icon
+
+ -- Juanma1980 <juanma1980@gmail.com>  Wed, 22 Jul 2020 16:07:04 +0200
+
 lliurex-www (0.40.6) bionic; urgency=medium
 
   * Copy links of easy-sites

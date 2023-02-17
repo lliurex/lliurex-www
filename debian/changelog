@@ -1,3 +1,10 @@
+lliurex-www (0.50.8) focal; urgency=medium
+
+  * Updated lliurex.net link to portal.edu.gva.es/lliurex
+  * removed M@C
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 17 Feb 2023 11:30:15 +0100
+
 lliurex-www (0.50.7) focal; urgency=medium
 
   * Initial release for focal

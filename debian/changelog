@@ -1,3 +1,10 @@
+lliurex-www (0.50.9) focal; urgency=medium
+
+  * Updated sai link to gvasai.edu.gva.es
+  * Fixed postinst to apply changes in links
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 23 Jun 2023 09:30:55 +0200
+
 lliurex-www (0.50.8) focal; urgency=medium
 
   * Updated lliurex.net link to portal.edu.gva.es/lliurex

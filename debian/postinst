@@ -38,9 +38,16 @@ case $1 in
 		
 		for x in $( ls /usr/share/lliurex-www/links/*.json); do
 		        FILENAME=$(basename $x)
-		        if [ ! -e "$LINKSPATH$FILENAME" ]; then
-		                cp "$BASEPATH$FILENAME" $LINKSPATH
-		        fi      
+		        #if [ ! -e "$LINKSPATH$FILENAME" ]; then
+		        cp "$BASEPATH$FILENAME" $LINKSPATH
+		        #fi      
+		done
+		
+		#Delete deprecated links
+		for ix in "mac.json"; do
+			if [ -e "$LINKSPATH$ix" ]; then
+				rm -f  "$LINKSPATH$ix"
+			fi
 		done
 		
 		chown www-data:www-data -R $DESTPATH

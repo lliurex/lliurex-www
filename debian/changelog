@@ -1,3 +1,9 @@
+lliurex-www (0.50.9+1lliurex) focal; urgency=medium
+
+  * Fix prerm script
+
+ -- Juanma1980 <juanma1980@gmail.com>  Fri, 15 Sep 2023 08:06:59 +0200
+
 lliurex-www (0.50.9) focal; urgency=medium
 
   * Updated sai link to gvasai.edu.gva.es

@@ -1,4 +1,4 @@
-lliurex-www (0.50.9+1lliurex) focal; urgency=medium
+lliurex-www (0.50.9-1lliurex) focal; urgency=medium
 
   * Fix prerm script
 

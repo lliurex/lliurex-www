@@ -18,11 +18,11 @@ case $1 in
 
 		if [ -L /var/www/error ] ; then
 
-			rm /var/www/error
+			rm /var/www/error || true
 		fi
 
-		find /var/lib/lliurex-www/links -type f -exec rm {} \;
-		find /var/lib/lliurex-www/ -type f -exec rm {} \;
+		find /var/lib/lliurex-www/links -type f -exec rm {} \; || true
+		find /var/lib/lliurex-www/ -type f -exec rm {} \; || true 
 	;;
 
 	failed-upgrade|upgrade|deconfigure)

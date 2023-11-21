@@ -1,3 +1,9 @@
+lliurex-www (0.60.9.1) jammy; urgency=medium
+
+  * Initial release for Jammy
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 21 Nov 2023 14:14:25 +0100
+
 lliurex-www (0.50.9.1) focal; urgency=medium
 
   * Fix prerm script

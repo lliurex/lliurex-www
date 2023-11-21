@@ -1,0 +1,36 @@
+#!/bin/sh
+
+set -e
+
+
+
+
+case $1 in
+	remove)
+
+		rm -r /var/lib/lliurex-www/ || true
+
+		if [ -L /var/www/srv ] ; then
+	
+			rm /var/www/srv || true
+
+		fi
+
+		if [ -L /var/www/error ] ; then
+
+			rm /var/www/error || true
+		fi
+
+		find /var/lib/lliurex-www/links -type f -exec rm {} \; || true
+		find /var/lib/lliurex-www/ -type f -exec rm {} \; || true 
+	;;
+
+	failed-upgrade|upgrade|deconfigure)
+	;;
+esac
+
+# Other Stuff #
+
+#DEBHELPER#
+	
+exit 0 	

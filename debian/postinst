@@ -1,0 +1,70 @@
+#!/bin/sh
+
+set -e
+
+case $1 in
+        configure)
+
+		if [ -e /var/www/html/ ] ; then 
+
+			#Delete default directory for apache 2.4 
+			rm -rf /var/www/html
+		fi		
+
+
+		if [ -L /var/www/srv  ]; then
+			REALPATH="$(readlink -f /var/www/srv)"
+			if [ "$REALPATH" != "/usr/share/ainur" ]; then
+				rm /var/www/srv
+			fi
+		fi
+
+
+		if [ ! -L /var/www/srv ] ; then
+
+			ln -s /usr/share/ainur /var/www/srv || true
+
+		fi
+
+
+
+		BASEPATH="/usr/share/lliurex-www/links/"
+		LINKSPATH="/var/lib/lliurex-www/links/"
+		DESTPATH="/var/lib/lliurex-www/"
+		
+		if [ ! -e "$LINKSPATH" ]; then
+		        mkdir -p $LINKSPATH
+		fi      
+		
+		for x in $( ls /usr/share/lliurex-www/links/*.json); do
+		        FILENAME=$(basename $x)
+		        #if [ ! -e "$LINKSPATH$FILENAME" ]; then
+		        cp "$BASEPATH$FILENAME" $LINKSPATH
+		        #fi      
+		done
+		
+		#Delete deprecated links
+		for ix in "mac.json"; do
+			if [ -e "$LINKSPATH$ix" ]; then
+				rm -f  "$LINKSPATH$ix"
+			fi
+		done
+		
+		chown www-data:www-data -R $DESTPATH
+		chown www-data:www-data -R $LINKSPATH
+		chown www-data:www-data -R /etc/lliurex-www
+
+		/usr/bin/lliurex-www-fix-links
+
+		invoke-rc.d apache2 reload || true
+		;;
+	*)
+	        echo "[DEBUG] Unknow action ..."
+	        ;;
+		
+esac
+	
+	
+#DEBHELPER#
+
+exit 0 		
